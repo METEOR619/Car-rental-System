@@ -1,0 +1,307 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ClientMaster.master.cs" Inherits="Client_ClientMaster" %>
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head runat="server">
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta name="description" content="Xpedia" />
+	<meta name="keywords" content="Xpedia" />
+	<meta name="author" content="" />
+	<meta name="MobileOptimized" content="320" />
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderHeader" runat="server">
+    </asp:ContentPlaceHolder>
+	
+    <!--Template style -->
+    <link href="assests/css/xpedia.css" rel="stylesheet" type="text/css" />
+	<!--favicon-->
+	<link rel="shortcut icon" type="image/png" href="assests/images/logo/icon.png" />
+
+</head>
+
+<body>
+	<form runat="server" id="form1">
+	<div class="serach-header">
+		<div class="searchbox">
+			<button class="close">×</button>
+		</div>
+	</div>
+	<!-- x top header_wrapper Start -->
+	<div class="x_top_header_wrapper float_left">
+		<div class="container">
+			<div class="x_top_header_left_side_wrapper float_left">
+				<p>Call Us : 1800 123 1234</p>
+			</div>
+			<div class="x_top_header_right_side_wrapper float_left">
+				<div class="x_top_header_social_icon_wrapper">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook-square"></i></a>
+						</li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a>
+						</li>
+						<li><a href="#"><i class="fa fa-twitter-square"></i></a>
+						</li>
+					</ul>
+				</div>
+                <asp:Panel ID="pnSignIn" runat="server">
+                    <div class="x_top_header_all_select_box_wrapper">
+					    <ul>
+						    <li class="Login">	<a href="SignIn.aspx"><i class="fa fa-sign-in" aria-hidden="true"></i> &nbsp;&nbsp;Sign In</a>
+						    </li>
+					    </ul>
+				    </div>
+                </asp:Panel>
+                <asp:Panel ID="pnUserName" runat="server">
+                     <div class="x_top_header_all_select_box_wrapper">
+					    <ul>
+						    <li class="Login"> 
+                                <asp:Label ID="lblUname" runat="server" CssClass="text-white" Text="UserName"></asp:Label>	
+						    </li>
+					    </ul>
+				    </div>
+                </asp:Panel>
+			</div>
+		</div>
+	</div>
+	<!-- x top header_wrapper End -->
+	<!-- hs Navigation Start -->
+	<div class="hs_navigation_header_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class=" col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+					<div class="hs_logo_wrapper d-none d-sm-none d-xs-none d-md-block">
+						<a href="Home.aspx">
+                            <img src="assests/images/logo/LogoBlack.png" alt="company logo" class="w-100" /> 
+						</a>
+					</div>
+				</div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">                    
+					<nav class="hs_main_menu d-none d-sm-none d-xs-none d-md-block">
+						<ul>
+							<li>
+                                <a class="menu-button single_menu" href="Home.aspx">Home</a>
+							</li>
+							<li>
+								<div class="dropdown-wrapper menu-button"> 
+                                    <a class="menu-button" href="#">Car</a>
+									<div class="drop-menu"> 
+										<a class="menu-button" href="CarList.aspx">Car List</a>
+									</div>
+								</div>
+							</li>
+							<li> <a class="menu-button single_menu" href="Services.aspx">Services </a>
+							</li>
+                            <%--<li> <a class="menu-button single_menu" href="#">Blog</a>
+							</li>--%>
+							<li> <a class="menu-button single_menu" href="AboutUs.aspx">About Us</a>
+							</li>
+                            <li> <a class="menu-button single_menu" href="ContactUs.aspx">Contact Us</a>
+							</li>
+                            <asp:Panel ID="pnUser" runat="server" style="display: inline;">
+                                <li>
+								    <div class="dropdown-wrapper menu-button"> 
+                                        <a class="menu-button" href="#"><i class="fa fa-user-circle"></i></a>
+									    <div class="drop-menu"> 
+										    <%--<a class="menu-button" href="#">Profile</a>--%>
+                                            <a class="menu-button" href="BookingHistory.aspx">Booking History</a>
+                                            <a class="menu-button" href="Logout.aspx">Logout</a>
+									    </div>
+								    </div>
+							    </li>
+                            </asp:Panel>
+						</ul>
+					</nav>
+					<header class="mobail_menu d-none d-block d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-6 col-sm-6 col-6">
+									<div class="hs_logo">
+										<a href="Home.aspx">
+											<img src="assests/images/logo/LogoBlack.png" class="w-100" alt="company logo" /> 
+										</a>
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-6 col-6">
+									<div class="cd-dropdown-wrapper">
+										<a class="house_toggle" href="#0">
+											<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="511.63px" height="511.631px" viewBox="0 0 511.63 511.631" style="enable-background:new 0 0 511.63 511.631;" xml:space="preserve">
+											<g>
+											<g>
+												<path d="M493.356,274.088H18.274c-4.952,0-9.233,1.811-12.851,5.428C1.809,283.129,0,287.417,0,292.362v36.545
+												c0,4.948,1.809,9.236,5.424,12.847c3.621,3.617,7.904,5.432,12.851,5.432h475.082c4.944,0,9.232-1.814,12.85-5.432
+												c3.614-3.61,5.425-7.898,5.425-12.847v-36.545c0-4.945-1.811-9.233-5.425-12.847C502.588,275.895,498.3,274.088,493.356,274.088z" />
+												<path d="M493.356,383.721H18.274c-4.952,0-9.233,1.81-12.851,5.427C1.809,392.762,0,397.046,0,401.994v36.546
+												c0,4.948,1.809,9.232,5.424,12.854c3.621,3.61,7.904,5.421,12.851,5.421h475.082c4.944,0,9.232-1.811,12.85-5.421
+												c3.614-3.621,5.425-7.905,5.425-12.854v-36.546c0-4.948-1.811-9.232-5.425-12.847C502.588,385.53,498.3,383.721,493.356,383.721z" />
+												<path d="M506.206,60.241c-3.617-3.612-7.905-5.424-12.85-5.424H18.274c-4.952,0-9.233,1.812-12.851,5.424
+												C1.809,63.858,0,68.143,0,73.091v36.547c0,4.948,1.809,9.229,5.424,12.847c3.621,3.616,7.904,5.424,12.851,5.424h475.082
+												c4.944,0,9.232-1.809,12.85-5.424c3.614-3.617,5.425-7.898,5.425-12.847V73.091C511.63,68.143,509.82,63.861,506.206,60.241z" />
+												<path d="M493.356,164.456H18.274c-4.952,0-9.233,1.807-12.851,5.424C1.809,173.495,0,177.778,0,182.727v36.547
+												c0,4.947,1.809,9.233,5.424,12.845c3.621,3.617,7.904,5.429,12.851,5.429h475.082c4.944,0,9.232-1.812,12.85-5.429
+												c3.614-3.612,5.425-7.898,5.425-12.845v-36.547c0-4.952-1.811-9.231-5.425-12.847C502.588,166.263,498.3,164.456,493.356,164.456z" />
+											</g>
+											</g>
+											</svg>
+										</a>
+										<!-- .cd-dropdown -->
+									</div>
+									<nav class="cd-dropdown">
+										<%--<h2><a href="Home.aspx">Car Travel</a></h2>--%>
+                                        
+                            <img src="assests/images/logo/LogoFullWhite.png" alt="company logo" class="w-75 p-2" /> 
+						
+										<a href="#0" class="cd-close">Close</a>
+										<ul class="cd-dropdown-content">
+											<li> <a href="Home.aspx">Home</a></li>
+											<li class="has-children"> <a href="#">Car</a>
+												<ul class="cd-secondary-dropdown is-hidden">
+													<li class="go-back"><a href="#0">Menu</a></li>
+													<li> <a href="CarList.aspx">Car List</a></li>
+												</ul>
+											</li>
+											<li> <a href="Services.aspx">Services</a></li>
+                                            <%--<li> <a href="#">Blog</a></li>--%>
+                                            <li> <a href="AboutUs.aspx">About Us</a></li>
+											<li> <a href="ContactUs.aspx">Contact Us</a></li>
+										</ul>
+										<!-- .cd-dropdown-content -->
+									</nav>
+								</div>
+							</div>
+						</div>
+						<!-- .cd-dropdown-wrapper -->
+					</header>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- hs Navigation End -->
+ 
+    <!-- ContentPlaceHolder Start -->
+    
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+
+
+    </asp:ContentPlaceHolder>
+    
+    <!-- ContentPlaceHolder End -->
+
+	<!-- x news latter Wrapper Start -->
+	<div class="x_news_letter_main_wrapper">
+		<div class="container">
+			<div class="x_news_contact_wrapper">
+                <img src="assests/images/design/nl1.png" alt="img" />
+				<h4>Call Us <br/> <span>1800 123 1234</span></h4>
+			</div>
+			<div class="x_news_contact_second_wrapper">
+				<h4>Newsletter</h4>
+			</div>
+			<div class="x_news_contact_search_wrapper" align="right">
+				<button>read more <i class="fa fa-arrow-right"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- x news latter Wrapper End -->
+
+	<!-- x footer Wrapper Start -->
+	<div class="x_footer_bottom_main_wrapper float_left">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+					<div class="x_footer_bottom_box_wrapper float_left">
+						<h3>About Us</h3>
+						<p>Our Aim to provide car on rent according to customers choice.</p>	
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+					<div class="x_footer_bottom_box_wrapper_second float_left">
+						<h3>Information</h3>
+						<ul>
+							<li><a href="#"><i class="fa fa-long-arrow-right"></i> &nbsp; About</a>
+							</li>
+							<li><a href="#"><i class="fa fa-long-arrow-right"></i> &nbsp; Service</a>
+							</li>
+							<li><a href="#"><i class="fa fa-long-arrow-right"></i> &nbsp; Terms and Conditions</a>
+							</li>
+							<li><a href="#"><i class="fa fa-long-arrow-right"></i> &nbsp; Privacy Policy</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+					<div class="x_footer_bottom_box_wrapper_second float_left">
+						<h3>Customer Support</h3>
+						<ul>
+							<li><a href="#"><i class="fa fa-long-arrow-right"></i> &nbsp; FAQ</a>
+							</li>
+							<li><a href="#"><i class="fa fa-long-arrow-right"></i> &nbsp; Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+					<div class="x_footer_bottom_box_wrapper_third float_left">
+						<h3>Have Questions?</h3>
+						<div class="x_footer_bottom_icon_section float_left">
+							<div class="x_footer_bottom_icon">	<i class="flaticon-phone-call"></i>
+							</div>
+							<div class="x_footer_bottom_icon_cont">
+								<h4>Toll Free Number</h4>
+								<p>1800 123 1234</p>
+							</div>
+						</div>
+						<div class="x_footer_bottom_icon_section x_footer_bottom_icon_section2 float_left">
+							<div class="x_footer_bottom_icon x_footer_bottom_icon2">	<i class="flaticon-mail-send"></i>
+							</div>
+							<div class="x_footer_bottom_icon_cont">
+								<h4>Email Us</h4>
+								<p>cartravel2501@gmail.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="x_copyr_main_wrapper float_left">
+		<a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
+		<div class="container">
+			<p>Copyright © 2020 CarTravel. All rights reserved.</p>
+		</div>
+	</div>
+    </form>
+    
+	<script src="assests/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="assests/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assests/js/modernizr.js" type="text/javascript"></script>
+	<script src="assests/js/select2.min.js" type="text/javascript"></script>
+	<script src="assests/js/jquery.menu-aim.js" type="text/javascript"></script>
+	<script src="assests/js/jquery-ui.js" type="text/javascript"></script>
+	<script src="assests/js/jquery.nice-select.min.js" type="text/javascript"></script>
+	<script src="assests/js/owl.carousel.js" type="text/javascript"></script>
+	<script src="assests/js/own-menu.js" type="text/javascript"></script>
+	<script src="assests/js/jquery.countTo.js" type="text/javascript"></script>
+	<script src="assests/js/jquery.inview.min.js" type="text/javascript"></script>
+	<script src="assests/js/jquery.bxslider.min.js" type="text/javascript"></script>
+    <script src="assests/js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<script src="assests/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+    <script src="assests/js/xpedia.js" type="text/javascript"></script>
+	<!-- custom js-->
+</body>
+
+
+<!-- Mirrored from webstrot.com/html/xpedia/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Feb 2019 09:52:40 GMT -->
+</html>

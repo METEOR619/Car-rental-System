@@ -1,0 +1,169 @@
+1. (C)
+	- Good morning,
+	- My name is Chirag Tolat and I'm Shivam Patel. 
+	- Today we are going to present our project named Car Rental System.
+	- We build one website called Car Travel as a part of our project.
+	
+2. (C)
+	- These are the agendas that we are going to cover in this presentation.
+	- Let's start with Introduction.
+	
+3. (S)
+	- Introduction
+	- Our website Car Travel provide cars on rent.
+	- It also helps customer to find a car in affordable price.
+	- Our website has all types of cars like Sedan, SUV, Luxury and many more.
+	
+4. (S)
+	- Next is Objective.
+	
+5. (C)
+	- Our main objective is to convert an offline car rental business with online car rental business.
+	- It also helps to those customers who have not enough money to buy a car.
+	- In addition, if any customer want to rent car for few days or for perticular purpose then they can also reant car from our website.
+	
+6. (C)
+	- Next, Scope.
+	
+7. (S)
+	- We aim to provide our service to as many as cities.
+	- Secondly, customers can book a car from anywhere and anytime.
+	- Our website also helpful to admin. It makes the work easier comparatively to traditional business.
+	
+8. (S)
+	- Now, Let's have a look on H/W requirements.
+	
+9. (C)
+	- These are the H/W requirements.
+	- RAM reqiure 4GB or Higher
+	- Hardisk 500GB or Higher
+	- And standard I/O Device.
+	
+10. (C)
+	- Next is S/W requirements
+	
+11. (C)
+	- We used ASP C#, JavaScript, Bootstrap, CSS and jQuery as frontend languages.
+	- We used Microsoft SQL Server 2008 as database backend.
+	- Operating system is windows 2010 Ultimate.
+	
+12. (S)
+	- Now, Let's see Database design.
+	
+13-14. (S)
+	- We created total 13 tables in this project.
+	- All the tables are in 3rd Normal Form.
+	- We have used PK-FK concept where it's reqired.
+	
+15-16 (C)
+17-18 (S)
+19-20 (C)
+21-22 (S)
+
+23. (C)
+	- Now, Ma'am we want to show you our project demonstration but before that we want to show you an animation video that we created.
+	
+	(S)
+	- This video is about how our website works.
+	- It helps to those who don't know the purpose of our website.
+		
+		OR
+		
+	- Okay Ma'am no problem. Chirag Let's start the practical demonstration.
+	
+After Video (S)
+	- Now, we are moving towards practical demonstration.
+	- So, Chirag Let's start the practical demonstration.
+
+DFD 
+	
+	Context Level (C)
+	
+	First Level Admin (S)
+	
+	First Level Client (C)
+	
+	Second Level Admin (S) (3 Page) (6,7,8)
+	
+	Second Level Admin (C) (2 Page) (9,10)	
+	
+Client Demo:
+ 
+	Home Page (C)
+		- This is the home page of our website.
+		- Here, user can search cars acordings to their needs.
+		- But before that I would like to show you sign up page.
+		- This is the Sign In page existing user can login from here.
+		- This is the link for Sign Up from where new users can Sign Up.
+		
+	Sign Up (S)
+		- This is the Sign Up page.
+		- Now, ma'am we would like to create an account of your using your Email ID and mobile no. Because you recive 3 different Emails and a Text Message on your device. So please ma'am share your details with us.
+		
+		OR
+		
+		- Sorry ma'am but we have impliment some features in our website. For that purpose we want to have your few details because you'll get 3 different Emails and a SMS on your device and you can see that properly. So, ma'am we are requesting you to provide your details.
+		
+		OR
+		
+		- Okay ma'am no problem. We'll continue with existing Login.
+		
+	Sign Up (C) (Filling Details)
+
+	Home after Sign In (S)
+		- User First Name on right side corner.
+		- Menu
+		- Booking History. (No History Found)
+		- Validation then Searching.
+		
+	Car List (C)
+
+	Car Details (S)
+
+	Booking (C)
+
+	Booking Done (S)
+		- Explain
+		- Inform about invoice.
+		
+	Invoice (C)
+
+	Booking History (S)
+
+	Forget Password (S)
+	
+	Services (C)
+	
+	About Us (C)
+	
+	Contact Us (S)
+
+Admin Demo:
+	
+	Sign In (S)
+	
+	Dashboard (C)
+	
+	Car Brand (S)
+	
+	Car Category (C)
+	
+	Car Model (S)
+	
+	Model Details (C)
+	
+	Booking Details (S)
+	
+	Contact Us Details (C)
+	
+	Gear Details (S)
+	
+	Fuel Details (C)
+	
+	Location (S)
+	
+	Admin (C)
+	
+25-26. (S)
+
+	- Conclusion

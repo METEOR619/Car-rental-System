@@ -1,0 +1,27 @@
+Email:cartravel2501@gmail.com
+Password:cartravel@123
+
+Less Secure App (For Email Sending)
+On this from Google
+
+Text Local (For Free SMS)
+API Key: bfoflzqeslI-BCJrcgnPrZdWu0e7yartFYZYkwMqmd	
+
+Client CSS Color Code: #4f5dec
+Admin CSS Color Code:  #3f6ad8
+
+DataAdapter- Fetch
+DataSet - Fill
+
+Database BAK File Path 
+C:\Program Files\Microsoft SQL Server\MSSQL10.SQLEXPRESS\MSSQL\Backup\
+
+Features:
+	- Send OTP on Email
+	- Send Invoice on Email
+	- Send Booking Confirmation SMS
+	- Password Encryption
+	- Forget Password through OTP on Email
+	- Web Hosting
+	- Tables : 13
+	- Store Procedure : 45
