@@ -5,14 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Admin_Logout : System.Web.UI.Page
+public partial class Admin_ManageCarCategory : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        //Session["AdminUname"] = null;
-        Session.Abandon();
-        Session.Clear();
-        Session.RemoveAll();
-        Response.Redirect("Login.aspx");
+        if (Convert.ToInt32(Session["IsSuper"]) == 0)
+        {
+            GridView1.Columns[3].Visible = false;
+        }
     }
 }
